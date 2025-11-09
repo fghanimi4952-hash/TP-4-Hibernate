@@ -1,6 +1,11 @@
 ## Objectif
 L'objectif de ce TP est de configurer une application Java avec Hibernate et MySQL pour gérer la persistance des données. Chaque étape du TP est détaillée avec des explications pour faciliter la compréhension. La structure finale de ce projet est présenté dans la figure ci-dessous.
 
+
+<img width="656" height="612" alt="Capture d’écran 2025-11-09 à 17 01 49" src="https://github.com/user-attachments/assets/deaf218e-5b3d-4989-bfba-b72347897836" />
+
+
+
 ## Résultat :
 
 
