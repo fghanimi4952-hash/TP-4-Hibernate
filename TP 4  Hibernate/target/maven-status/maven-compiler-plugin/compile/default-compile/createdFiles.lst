@@ -1,0 +1,7 @@
+test/Test.class
+util/HibernateUtil.class
+dao/IDao.class
+services/SalleService.class
+services/MachineService.class
+entities/Machine.class
+entities/Salle.class

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="services.SalleServiceTest" time="0.938" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mac/Desktop/ S3/MLIAEdu/Développement JakartaEE  Spring/TP 4  Hibernate/target/test-classes:/Users/mac/Desktop/ S3/MLIAEdu/Développement JakartaEE  Spring/TP 4  Hibernate/target/classes:/Users/mac/.m2/repository/org/hibernate/hibernate-core/5.6.9.Final/hibernate-core-5.6.9.Final.jar:/Users/mac/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:/Users/mac/.m2/repository/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar:/Users/mac/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/mac/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/mac/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/Users/mac/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/mac/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/mac/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/mac/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/mac/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/mac/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/mac/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/mac/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/mac/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/mac/.m2/repository/mysql/mysql-connector-java/8.0.29/mysql-connector-java-8.0.29.jar:/Users/mac/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar:/Users/mac/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/mac/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mac/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.country" value="MA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mac/Desktop/ S3/MLIAEdu/Développement JakartaEE  Spring/TP 4  Hibernate/target/surefire/surefirebooter-20251109165634691_3.jar /Users/mac/Desktop/ S3/MLIAEdu/Développement JakartaEE  Spring/TP 4  Hibernate/target/surefire 2025-11-09T16-56-34_643-jvmRun1 surefire-20251109165634691_1tmp surefire_0-20251109165634691_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mac/Desktop/ S3/MLIAEdu/Développement JakartaEE  Spring/TP 4  Hibernate/target/test-classes:/Users/mac/Desktop/ S3/MLIAEdu/Développement JakartaEE  Spring/TP 4  Hibernate/target/classes:/Users/mac/.m2/repository/org/hibernate/hibernate-core/5.6.9.Final/hibernate-core-5.6.9.Final.jar:/Users/mac/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:/Users/mac/.m2/repository/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar:/Users/mac/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/mac/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/mac/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/Users/mac/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/mac/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/mac/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/mac/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/mac/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/mac/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/mac/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/mac/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/mac/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/mac/.m2/repository/mysql/mysql-connector-java/8.0.29/mysql-connector-java-8.0.29.jar:/Users/mac/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar:/Users/mac/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/mac/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mac/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mac"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/mac/Desktop/ S3/MLIAEdu/Développement JakartaEE  Spring/TP 4  Hibernate"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/mac/Desktop/ S3/MLIAEdu/Développement JakartaEE  Spring/TP 4  Hibernate/target/surefire/surefirebooter-20251109165634691_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
+    <property name="user.name" value="mac"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="localRepository" value="/Users/mac/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/s2/6djry7w56_9_jxf6yg94swpc0000gn/T/"/>
+    <property name="idea.version" value="2025.2.2"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="/Users/mac/Desktop/ S3/MLIAEdu/Développement JakartaEE  Spring/TP 4  Hibernate"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.8+12-LTS-250"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="maven.repo.local" value="/Users/mac/.m2/repository"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testFindAll" classname="services.SalleServiceTest" time="0.888">
+    <system-out><![CDATA[Hibernate: 
+    insert 
+    into
+        salles
+        (code) 
+    values
+        (?)
+Hibernate: 
+    select
+        salle0_.id as id1_1_,
+        salle0_.code as code2_1_ 
+    from
+        salles salle0_
+Hibernate: 
+    select
+        machines0_.salle_id as salle_id4_0_0_,
+        machines0_.id as id1_0_0_,
+        machines0_.id as id1_0_1_,
+        machines0_.dateAchat as dateacha2_0_1_,
+        machines0_.ref as ref3_0_1_,
+        machines0_.salle_id as salle_id4_0_1_ 
+    from
+        Machine machines0_ 
+    where
+        machines0_.salle_id=?
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.code as code2_1_0_,
+        machines1_.salle_id as salle_id4_0_1_,
+        machines1_.id as id1_0_1_,
+        machines1_.id as id1_0_2_,
+        machines1_.dateAchat as dateacha2_0_2_,
+        machines1_.ref as ref3_0_2_,
+        machines1_.salle_id as salle_id4_0_2_ 
+    from
+        salles salle0_ 
+    left outer join
+        Machine machines1_ 
+            on salle0_.id=machines1_.salle_id 
+    where
+        salle0_.id=?
+Hibernate: 
+    delete 
+    from
+        salles 
+    where
+        id=?
+]]></system-out>
+    <system-err><![CDATA[nov. 09, 2025 4:56:34 P.M. org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.6.9.Final
+nov. 09, 2025 4:56:35 P.M. org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver resolveEntity
+WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+nov. 09, 2025 4:56:35 P.M. org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+nov. 09, 2025 4:56:35 P.M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+nov. 09, 2025 4:56:35 P.M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/base11?zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=UTC]
+nov. 09, 2025 4:56:35 P.M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+nov. 09, 2025 4:56:35 P.M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+nov. 09, 2025 4:56:35 P.M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+nov. 09, 2025 4:56:35 P.M. org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+nov. 09, 2025 4:56:35 P.M. org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5377414a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+nov. 09, 2025 4:56:35 P.M. org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+]]></system-err>
+  </testcase>
+  <testcase name="testFindById" classname="services.SalleServiceTest" time="0.005">
+    <system-out><![CDATA[Hibernate: 
+    insert 
+    into
+        salles
+        (code) 
+    values
+        (?)
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.code as code2_1_0_,
+        machines1_.salle_id as salle_id4_0_1_,
+        machines1_.id as id1_0_1_,
+        machines1_.id as id1_0_2_,
+        machines1_.dateAchat as dateacha2_0_2_,
+        machines1_.ref as ref3_0_2_,
+        machines1_.salle_id as salle_id4_0_2_ 
+    from
+        salles salle0_ 
+    left outer join
+        Machine machines1_ 
+            on salle0_.id=machines1_.salle_id 
+    where
+        salle0_.id=?
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.code as code2_1_0_,
+        machines1_.salle_id as salle_id4_0_1_,
+        machines1_.id as id1_0_1_,
+        machines1_.id as id1_0_2_,
+        machines1_.dateAchat as dateacha2_0_2_,
+        machines1_.ref as ref3_0_2_,
+        machines1_.salle_id as salle_id4_0_2_ 
+    from
+        salles salle0_ 
+    left outer join
+        Machine machines1_ 
+            on salle0_.id=machines1_.salle_id 
+    where
+        salle0_.id=?
+Hibernate: 
+    delete 
+    from
+        salles 
+    where
+        id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testCreate" classname="services.SalleServiceTest" time="0.005">
+    <system-out><![CDATA[Hibernate: 
+    insert 
+    into
+        salles
+        (code) 
+    values
+        (?)
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.code as code2_1_0_,
+        machines1_.salle_id as salle_id4_0_1_,
+        machines1_.id as id1_0_1_,
+        machines1_.id as id1_0_2_,
+        machines1_.dateAchat as dateacha2_0_2_,
+        machines1_.ref as ref3_0_2_,
+        machines1_.salle_id as salle_id4_0_2_ 
+    from
+        salles salle0_ 
+    left outer join
+        Machine machines1_ 
+            on salle0_.id=machines1_.salle_id 
+    where
+        salle0_.id=?
+Hibernate: 
+    delete 
+    from
+        salles 
+    where
+        id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testDelete" classname="services.SalleServiceTest" time="0.005">
+    <system-out><![CDATA[Hibernate: 
+    insert 
+    into
+        salles
+        (code) 
+    values
+        (?)
+Hibernate: 
+    delete 
+    from
+        salles 
+    where
+        id=?
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.code as code2_1_0_,
+        machines1_.salle_id as salle_id4_0_1_,
+        machines1_.id as id1_0_1_,
+        machines1_.id as id1_0_2_,
+        machines1_.dateAchat as dateacha2_0_2_,
+        machines1_.ref as ref3_0_2_,
+        machines1_.salle_id as salle_id4_0_2_ 
+    from
+        salles salle0_ 
+    left outer join
+        Machine machines1_ 
+            on salle0_.id=machines1_.salle_id 
+    where
+        salle0_.id=?
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.code as code2_1_0_,
+        machines1_.salle_id as salle_id4_0_1_,
+        machines1_.id as id1_0_1_,
+        machines1_.id as id1_0_2_,
+        machines1_.dateAchat as dateacha2_0_2_,
+        machines1_.ref as ref3_0_2_,
+        machines1_.salle_id as salle_id4_0_2_ 
+    from
+        salles salle0_ 
+    left outer join
+        Machine machines1_ 
+            on salle0_.id=machines1_.salle_id 
+    where
+        salle0_.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdate" classname="services.SalleServiceTest" time="0.008">
+    <system-out><![CDATA[Hibernate: 
+    insert 
+    into
+        salles
+        (code) 
+    values
+        (?)
+Hibernate: 
+    update
+        salles 
+    set
+        code=? 
+    where
+        id=?
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.code as code2_1_0_,
+        machines1_.salle_id as salle_id4_0_1_,
+        machines1_.id as id1_0_1_,
+        machines1_.id as id1_0_2_,
+        machines1_.dateAchat as dateacha2_0_2_,
+        machines1_.ref as ref3_0_2_,
+        machines1_.salle_id as salle_id4_0_2_ 
+    from
+        salles salle0_ 
+    left outer join
+        Machine machines1_ 
+            on salle0_.id=machines1_.salle_id 
+    where
+        salle0_.id=?
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.code as code2_1_0_,
+        machines1_.salle_id as salle_id4_0_1_,
+        machines1_.id as id1_0_1_,
+        machines1_.id as id1_0_2_,
+        machines1_.dateAchat as dateacha2_0_2_,
+        machines1_.ref as ref3_0_2_,
+        machines1_.salle_id as salle_id4_0_2_ 
+    from
+        salles salle0_ 
+    left outer join
+        Machine machines1_ 
+            on salle0_.id=machines1_.salle_id 
+    where
+        salle0_.id=?
+Hibernate: 
+    delete 
+    from
+        salles 
+    where
+        id=?
+]]></system-out>
+  </testcase>
+</testsuite>
